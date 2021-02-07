@@ -1,0 +1,16 @@
+#To enable computer vision
+import cv2
+
+#variable that will define the function (task) we need to perform
+#1-parenthesis if you are dealing with multiple webcams.
+cam = cv2.VideoCapture(0)
+
+while cam.isOpened():
+    #it will return a border(frame) and camera visuals(visuals)
+    visuals, frame = cam.read()
+
+    #creating a key to end the process
+    if cv2.waitKey(10) == ord('e'):
+        break
+
+    cv2.imshow("WARNING!!!! YOU ARE UNDER SURVEILLANCE", frame)
