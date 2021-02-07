@@ -10,7 +10,7 @@ while cam.isOpened():
     visuals, frame = cam.read()
 
     #creating a key to end the process
-    if cv2.waitKey(10) == ord('e'):
+    if cv2.waitKey(10) == ord('s'):
         break
 
     cv2.imshow("WARNING!!!! YOU ARE UNDER SURVEILLANCE", frame)
